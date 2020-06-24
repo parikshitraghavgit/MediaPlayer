@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".PlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#FC3CCC">
+
+        <ImageView
+            android:id="@+id/imageView_dddd"
+            android:layout_width="368dp"
+            android:layout_height="357dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/mplogo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#FC3CCC">
+
+
+        <TextView
+            android:id="@+id/textView_song_name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BCF34738"
+            android:text="Song Name"
+            android:textAlignment="center"
+            android:textColor="#60FD0A"
+            android:textSize="24sp" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/button_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/pause" />
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/skip_previous_black_24dp" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/next_black_24dp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
